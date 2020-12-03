@@ -47,12 +47,12 @@ namespace BizHawk.Emulation.Common
 			var filename = Path.Combine(path, line);
 			if (File.Exists(filename))
 			{
-				Debug.WriteLine("loading external game database {0}", line);
+				Debug.WriteLine(string.Format("loading external game database {0}", line));
 				initializeWork(filename);
 			}
 			else
 			{
-				Debug.WriteLine("BENIGN: missing external game database {0}", line);
+				Debug.WriteLine(string.Format("BENIGN: missing external game database {0}", line));
 			}
 		}
 
